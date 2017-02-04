@@ -23,5 +23,21 @@ Dataset: Mnist<BR>
 https://github.com/fchollet/keras/blob/master/examples/mnist_cnn.py<BR>
 https://github.com/pengpaiSH/Kaggle_NCFM<BR>
 
+#Deep Learning textbook
+http://www.deeplearningbook.org/<BR>
+Ian Goodfellow and Yoshua Bengio and Aaron Courville<BR>
+https://github.com/goodfeli/dlbook_exercises<BR>
 
+Ian Goodfellow<BR>
+http://www.iangoodfellow.com/<BR>
+http://www.iangoodfellow.com/slides/defense.pdf<BR>
+https://www.youtube.com/watch?v=ckoD_bE8Bhs<BR>
 
+#MNIST For ML Beginners
+https://www.tensorflow.org/tutorials/mnist/beginners/<BR>
+
+#Deep MNIST for Experts
+https://www.tensorflow.org/tutorials/mnist/pros/<BR>
+
+#Building Autoencoders in Keras
+https://blog.keras.io/building-autoencoders-in-keras.html<BR>
