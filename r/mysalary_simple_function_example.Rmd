@@ -1,0 +1,91 @@
+---
+title: My Salary - Simple Function to Calculate the amount of money of salary based
+  on your rent price
+output:
+  pdf_document: default
+  html_notebook: default
+---
+
+```{r}
+
+# How to create a functions in R
+# Caio Moreno"
+
+#Objective 
+#This is a quick example of how to create a simple function using R.
+
+
+## Salary Function 
+
+
+# salary
+# rent_value 
+
+hour_rate_salary <- function (x,y,z) {
+  
+  annual_salary  = x 
+  number_of_weeks_in_a_year = y
+  hours_worked_per_week = z
+  
+  hour_rate_salary = annual_salary / 
+    number_of_weeks_in_a_year / 
+    hours_worked_per_week
+  
+  return(hour_rate_salary)
+  
+}
+
+
+## Call Salary Function 
+
+#Annual Salary
+as = 120000
+#Number of Weeks in a year
+nwy = 52
+# Hours worked per week
+hwpw = 40
+
+
+my_hour_rate_salary <- hour_rate_salary(as,
+                                        nwy,
+                                        hwpw)
+
+my_hour_rate_salary
+
+
+
+## Function to calculate your salary based in your rent value
+
+# salary
+# rent_value 
+
+salary <- function (x) {
+  
+  rent_value = x 
+  
+  salary = rent_value / 0.3  
+  
+  return(salary)
+  
+}
+
+
+## Call Function to calculate your salary based in your rent value
+
+x = 1500
+mysalary <- salary(x)
+
+mysalary
+
+
+## References
+# R (https://www.r-project.org/)
+
+## Thank you
+# Caio Moreno
+# github.com/caiomsouza/playground/r-tutorials
+# e-mail is caiofern@ucm.es 
+
+
+```
+

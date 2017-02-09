@@ -131,6 +131,14 @@ pca_model <- tbl(sc, "iris") %>%
 print(pca_model)
 
 
+# Train and Test
+sets <- sparklyr::sdf_partition(iris_tbl, training=0.7, test = 0.3)
+train <- sets$training
+test <- sets$test
+
+train
+test
+
 
 
 
