@@ -1,0 +1,79 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%	LaTeX Main File for Stanford University PhD Thesis
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Copyright 2001  by  Jung-Suk Goo    (goojs@gloworm.stanford.edu)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%% Basic Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[twoside,12pt]{report}
+\usepackage{SETUP/thesis}
+
+
+%=== Other Packages Required As Needed =================
+\usepackage{times, epsfig, subfigure, amssymb, amsmath, rotating}
+
+
+%=== Some Definitions ==================================
+%\newtheorem{theorem}{Theorem}[section]
+%\newtheorem{lemma}{Lemma}[section]
+%\newtheorem{proposition}{Proposition}[section]
+%\newtheorem{observation}{Observation}[section]
+%\newcommand{\isdef}{\stackrel{\Delta}{=}}
+%\newcommand{\calE}{{\cal E}}
+%\newcommand{\calN}{{\cal N}}
+%\newcommand{\calL}{{\cal L}}
+
+%\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+%    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+%\newtheorem{theorem}{Theorem}
+%\setcounter{page}{1}
+
+
+%=== Read-In Compile Options ===========================
+\input{SETUP/draftmode.tex}		% Draft Mode
+\input{SETUP/includeonly.tex}		% Chapters to Compile
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%% Begin Main Body %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%=== Begin Thesis ======================================
+\begin{document}
+\begin{thesis}
+
+\headingsoff
+
+
+%=== Include Sub-LaTeX files ===========================
+
+%--- Cover Page ---------------------
+\include{PREFACE/cover}
+
+%--- Preface ------------------------
+\include{PREFACE/abstract}
+\include{PREFACE/acknowledgement}
+
+\headingson
+%--- Chapters -----------------------
+\include{BODY/intro}
+\include{BODY/fundament}
+\include{BODY/concl}
+
+%--- Appendix -----------------------
+\appendix
+\include{APPENDIX/append1}
+
+%--- Bibliography -------------------
+\addcontentsline{toc}{chapter}{\bibname}
+\bibliographystyle{SETUP/thesis_bib}
+\bibliography{REFERENCE/reference}
+
+
+%=== End Thesis ========================================
+\end{thesis}
+\end{document}
