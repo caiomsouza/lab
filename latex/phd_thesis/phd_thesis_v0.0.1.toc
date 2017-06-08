@@ -1,0 +1,9 @@
+\contentsline {chapter}{Preface}{iv}
+\contentsline {chapter}{Acknowledgments}{v}
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {chapter}{\numberline {2}Bayes' theorem}{2}
+\contentsline {chapter}{\numberline {3}Fuzzy linguistic models}{3}
+\contentsline {chapter}{\numberline {4}Place to tex Latex}{4}
+\contentsline {chapter}{\numberline {5}Conclusions}{5}
+\contentsline {chapter}{\numberline {A}A Long Proof}{6}
+\contentsline {chapter}{\numberline {B}Reference}{7}

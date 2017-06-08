@@ -1,0 +1,347 @@
+% Stanford University PhD thesis style -- modifications to the report style
+% This is unofficial so you should always double check against the
+% Registrar's office rules
+% See http://library.stanford.edu/research/bibliography-management/latex-and-bibtex
+% 
+% Example of use below
+% See the suthesis-2e.sty file for documentation
+%
+\documentclass{report}
+\usepackage{suthesis-2e_ucm}
+\dept{Statistics}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\title{Fuzzy linguistic models applied to the measurement and management of reputation in marketing in a Big Data environment.}
+\author{Caio Fernandes Moreno}
+\principaladviser{Ramon Alberto Carrasco Gonzalez}
+\firstreader{First Reader Name}
+\secondreader{Second Reader Name}
+
+\beforepreface
+\prefacesection{Preface}
+This thesis tells you all you need to know about...
+\prefacesection{Acknowledgments}
+I would like to thank...
+\afterpreface
+
+\chapter{Introduction}
+
+
+Test with formulas
+
+
+The salary function:
+
+ \begin{equation}
+ f(x)  = rent \div 0.3 )
+ \end{equation}
+ 
+ 
+To estimate the salary: \(f(x) = \displaystyle \frac{rent}{0.3}\), we cannot say this is correct, but it can help people estimate how much money they need to earn based on a easy variable to get, the price to rent a house in a specific place. 
+ 
+
+\chapter{Stuffs about DS}
+
+Types of problems
+- Classification Problem
+- Regression 
+
+Do we need to explain the results?
+
+If you need to explain the results you need to use white-box algorithms.
+
+White box vs Black Box Algorithms 
+
+Principal Algorithms 
+
+What algorithms run in Apache Spark or in a Big Data Science envorment ?
+
+
+http://homes.cs.washington.edu/~pedrod/papers/ilp07.pdf
+
+Structured Machine Learning:
+Ten Problems for the Next Ten Years
+
+http://homes.cs.washington.edu/~pedrod/
+
+http://homes.cs.washington.edu/~pedrod/class/
+
+
+Types of problems and tasks[edit]
+
+Machine learning tasks are typically classified into three broad categories, depending on the nature of the learning "signal" or "feedback" available to a learning system. These are[14]
+
+Supervised learning: The computer is presented with example inputs and their desired outputs, given by a "teacher", and the goal is to learn a general rule that maps inputs to outputs.
+Unsupervised learning: No labels are given to the learning algorithm, leaving it on its own to find structure in its input. Unsupervised learning can be a goal in itself (discovering hidden patterns in data) or a means towards an end (feature learning).
+Reinforcement learning: A computer program interacts with a dynamic environment in which it must perform a certain goal (such as driving a vehicle or playing a game against an opponent[4]:3). The program is provided feedback in terms of rewards and punishments as it navigates its problem space.
+Between supervised and unsupervised learning is semi-supervised learning, where the teacher gives an incomplete training signal: a training set with some (often many) of the target outputs missing. Transduction is a special case of this principle where the entire set of problem instances is known at learning time, except that part of the targets are missing.
+
+Among other categories of machine learning problems, learning to learn learns its own inductive bias based on previous experience. Developmental learning, elaborated for robot learning, generates its own sequences (also called curriculum) of learning situations to cumulatively acquire repertoires of novel skills through autonomous self-exploration and social interaction with human teachers and using guidance mechanisms such as active learning, maturation, motor synergies, and imitation.
+
+Another categorization of machine learning tasks arises when one considers the desired output of a machine-learned system:[4]:3
+
+In classification, inputs are divided into two or more classes, and the learner must produce a model that assigns unseen inputs to one or more (multi-label classification) of these classes. This is typically tackled in a supervised way. Spam filtering is an example of classification, where the inputs are email (or other) messages and the classes are "spam" and "not spam".
+In regression, also a supervised problem, the outputs are continuous rather than discrete.
+In clustering, a set of inputs is to be divided into groups. Unlike in classification, the groups are not known beforehand, making this typically an unsupervised task.
+Density estimation finds the distribution of inputs in some space.
+Dimensionality reduction simplifies inputs by mapping them into a lower-dimensional space. Topic modeling is a related problem, where a program is given a list of human language documents and is tasked to find out which documents cover similar topics.
+
+
+
+Approaches[edit]
+Main article: List of machine learning algorithms
+Decision tree learning[edit]
+Main article: Decision tree learning
+Decision tree learning uses a decision tree as a predictive model, which maps observations about an item to conclusions about the item's target value.
+
+Association rule learning[edit]
+Main article: Association rule learning
+Association rule learning is a method for discovering interesting relations between variables in large databases.
+
+Artificial neural networks[edit]
+Main article: Artificial neural network
+An artificial neural network (ANN) learning algorithm, usually called "neural network" (NN), is a learning algorithm that is inspired by the structure and functional aspects of biological neural networks. Computations are structured in terms of an interconnected group of artificial neurons, processing information using a connectionist approach to computation. Modern neural networks are non-linear statistical data modeling tools. They are usually used to model complex relationships between inputs and outputs, to find patterns in data, or to capture the statistical structure in an unknown joint probability distribution between observed variables.
+
+Deep learning[edit]
+Main article: Deep learning
+Falling hardware prices and the development of GPUs for personal use in the last few years have contributed to the development of the concept of Deep learning which consists of multiple hidden layers in an artificial neural network. This approach tries to model the way the human brain processes light and sound into vision and hearing. Some successful applications of deep learning are computer vision and speech recognition.[23]
+
+Inductive logic programming[edit]
+Main article: Inductive logic programming
+Inductive logic programming (ILP) is an approach to rule learning using logic programming as a uniform representation for input examples, background knowledge, and hypotheses. Given an encoding of the known background knowledge and a set of examples represented as a logical database of facts, an ILP system will derive a hypothesized logic program that entails all positive and no negative examples. Inductive programming is a related field that considers any kind of programming languages for representing hypotheses (and not only logic programming), such as functional programs.
+
+Support vector machines[edit]
+Main article: Support vector machines
+Support vector machines (SVMs) are a set of related supervised learning methods used for classification and regression. Given a set of training examples, each marked as belonging to one of two categories, an SVM training algorithm builds a model that predicts whether a new example falls into one category or the other.
+
+Clustering[edit]
+Main article: Cluster analysis
+Cluster analysis is the assignment of a set of observations into subsets (called clusters) so that observations within the same cluster are similar according to some predesignated criterion or criteria, while observations drawn from different clusters are dissimilar. Different clustering techniques make different assumptions on the structure of the data, often defined by some similarity metric and evaluated for example by internal compactness (similarity between members of the same cluster) and separation between different clusters. Other methods are based on estimated density and graph connectivity. Clustering is a method of unsupervised learning, and a common technique for statistical data analysis.
+
+Bayesian networks[edit]
+Main article: Bayesian network
+A Bayesian network, belief network or directed acyclic graphical model is a probabilistic graphical model that represents a set of random variables and their conditional independencies via a directed acyclic graph (DAG). For example, a Bayesian network could represent the probabilistic relationships between diseases and symptoms. Given symptoms, the network can be used to compute the probabilities of the presence of various diseases. Efficient algorithms exist that perform inference and learning.
+
+Reinforcement learning[edit]
+Main article: Reinforcement learning
+Reinforcement learning is concerned with how an agent ought to take actions in an environment so as to maximize some notion of long-term reward. Reinforcement learning algorithms attempt to find a policy that maps states of the world to the actions the agent ought to take in those states. Reinforcement learning differs from the supervised learning problem in that correct input/output pairs are never presented, nor sub-optimal actions explicitly corrected.
+
+Representation learning[edit]
+Main article: Representation learning
+Several learning algorithms, mostly unsupervised learning algorithms, aim at discovering better representations of the inputs provided during training. Classical examples include principal components analysis and cluster analysis. Representation learning algorithms often attempt to preserve the information in their input but transform it in a way that makes it useful, often as a pre-processing step before performing classification or predictions, allowing to reconstruct the inputs coming from the unknown data generating distribution, while not being necessarily faithful for configurations that are implausible under that distribution.
+
+Manifold learning algorithms attempt to do so under the constraint that the learned representation is low-dimensional. Sparse coding algorithms attempt to do so under the constraint that the learned representation is sparse (has many zeros). Multilinear subspace learning algorithms aim to learn low-dimensional representations directly from tensor representations for multidimensional data, without reshaping them into (high-dimensional) vectors.[24] Deep learning algorithms discover multiple levels of representation, or a hierarchy of features, with higher-level, more abstract features defined in terms of (or generating) lower-level features. It has been argued that an intelligent machine is one that learns a representation that disentangles the underlying factors of variation that explain the observed data.[25]
+
+Similarity and metric learning[edit]
+Main article: Similarity learning
+In this problem, the learning machine is given pairs of examples that are considered similar and pairs of less similar objects. It then needs to learn a similarity function (or a distance metric function) that can predict if new objects are similar. It is sometimes used in Recommendation systems.
+
+Sparse dictionary learning[edit]
+Main article: Sparse dictionary learning
+In this method, a datum is represented as a linear combination of basis functions, and the coefficients are assumed to be sparse. Let x be a d-dimensional datum, D be a d by n matrix, where each column of D represents a basis function. r is the coefficient to represent x using D. Mathematically, sparse dictionary learning means solving {\displaystyle x\approx Dr} {\displaystyle x\approx Dr} where r is sparse. Generally speaking, n is assumed to be larger than d to allow the freedom for a sparse representation.
+
+Learning a dictionary along with sparse representations is strongly NP-hard and also difficult to solve approximately.[26] A popular heuristic method for sparse dictionary learning is K-SVD.
+
+Sparse dictionary learning has been applied in several contexts. In classification, the problem is to determine which classes a previously unseen datum belongs to. Suppose a dictionary for each class has already been built. Then a new datum is associated with the class such that it's best sparsely represented by the corresponding dictionary. Sparse dictionary learning has also been applied in image de-noising. The key idea is that a clean image patch can be sparsely represented by an image dictionary, but the noise cannot.[27]
+
+Genetic algorithms[edit]
+Main article: Genetic algorithm
+A genetic algorithm (GA) is a search heuristic that mimics the process of natural selection, and uses methods such as mutation and crossover to generate new genotype in the hope of finding good solutions to a given problem. In machine learning, genetic algorithms found some uses in the 1980s and 1990s.[28][29] Vice versa, machine learning techniques have been used to improve the performance of genetic and evolutionary algorithms.[30]
+
+Rule-based machine learning[edit]
+Rule-based machine learning is a general term for any machine learning method that identifies, learns, or evolves `rules’ to store, manipulate or apply, knowledge. The defining characteristic of a rule-based machine learner is the identification and utilization of a set of relational rules that collectively represent the knowledge captured by the system. This is in contrast to other machine learners that commonly identify a singular model that can be universally applied to any instance in order to make a prediction.[31] Rule-based machine learning approaches include learning classifier systems, association rule learning, and artificial immune systems.
+
+Learning classifier systems[edit]
+Main article: Learning classifier system
+Learning classifier systems (LCS) are a family of rule-based machine learning algorithms that combine a discovery component (e.g. typically a genetic algorithm) with a learning component (performing either supervised learning, reinforcement learning, or unsupervised learning). They seek to identify a set of context-dependent rules that collectively store and apply knowledge in a piecewise manner in order to make predictions.[32]
+
+
+https://en.wikipedia.org/wiki/Machine_learning
+
+
+
+
+
+
+
+
+it is important to investigate some aspects and expectations.
+
+I will suggest some questions to us to respond in order to plan it.
+
+The same questions can be applied to all Data Science Projects.
+
+1) What business problem are we trying to solve? 
+
+In Data Science we have a lot of different types of problems.
+
+A typical one is called classification problems.
+
+For example:
+
+Classify if a customer is happy (1) or unhappy (1). This is a binary classification problems.
+
+I have a real experience in this case, because I participate in a Kaggle Competition using Santander Bank dataset.
+
+Please see the project in the link below:
+https://github.com/caiomsouza/kaggle-competitions/tree/master/santander-customer-satisfaction
+
+So, the first thing is to define the problem. If we do not have the problem we cannot continue.
+
+I also have academic experience in other types of problems, but I do not have experience with real clients.
+
+Anya applied an algorithm called apriori in a pre-PoV for Network Rails and I know that Marcelo and Boris they did some time series predictions with a Data Scientist in USA from HDS.
+
+2) What do we want to use?
+
+In Data Science we can use:
+R
+Python
+Weka
+All of them are integrate with PDI.
+
+3) Are we going to promete PDI and BA Server in the project?
+
+Usually a real data scientist project will not use PDI.
+
+But we as a Company can add value using PDI and BA Server in layers like:
+Data Ingestion (if needed);
+Data Preparation (if needed)
+Orchestration (if needed)
+Data Visualisation (if needed).
+
+4) Are we talking about a Data Science project or a Big Data Science project?
+
+There are much more complexity in Big Data Science Projects, where we need to run algorithms in Big Data environment.
+
+In this case we will need to use things like PySpark or R with Spark.
+
+5) Resume
+
+In resume, define the problem, the tools, Pentaho strategy and the amount of data.
+
+
+
+\chapter{Bayes' theorem}
+
+
+Bayes' theorem
+
+
+Sir Harold Jeffereys wrote that Bayes'theorem "is to the theory of probability what the Pythagorean theorem is to geometry" [1]
+
+Bayes is a measure of belief. And it says that we can learn even from missing and inadequate data,
+from approximations, and from ignorance. [2]
+
+2.1 sssss
+
+ssjsjssj
+
+
+\chapter{Fuzzy linguistic models}
+
+Fuzzy logic is a form of many-valued logic in which the truth values of variables may be any real number between 0 and 1. By contrast, in Boolean logic, the truth values of variables may only be the integer values 0 or 1. Fuzzy logic has been employed to handle the concept of partial truth, where the truth value may range between completely true and completely false.[1] Furthermore, when linguistic variables are used, these degrees may be managed by specific (membership) functions.[2]
+
+The term fuzzy logic was introduced with the 1965 proposal of fuzzy set theory by Lotfi Zadeh.[3][4] Fuzzy logic had however been studied since the 1920s, as infinite-valued logic—notably by Łukasiewicz and Tarski.[5]
+
+Fuzzy logic has been applied to many fields, from control theory to artificial intelligence.
+
+
+\subsection*{Linguistic variables}
+
+While variables in mathematics usually take numerical values, in fuzzy logic applications non-numeric values are often used to facilitate the expression of rules and facts.[6]
+
+A linguistic variable such as age may accept values such as young and its antonym old. Because natural languages do not always contain enough value terms to express a fuzzy value scale, it is common practice to modify linguistic values with adjectives or adverbs. For example, we can use the hedges rather and somewhat to construct the additional values rather old or somewhat young.
+
+Fuzzification operations can map mathematical input values into fuzzy membership functions. And the opposite de-fuzzifying operations can be used to map a fuzzy output membership functions into a "crisp" output value that can be then used for decision or control purposes.
+
+
+\chapter{Place to tex Latex}
+
+\texttt{ssss}
+
+\begin{quote}
+sssksksks dsfjsdf sfslkdfjsldk fjsldkj
+\end{quote}
+
+
+``ssssss ''
+
+\begin{itemize}
+  \item sss1
+  \item sss 2
+  \item sss3 ddd
+\end{itemize}
+
+
+\begin{verbatim}
+ssss dsnfldsjflk sjkldf jsdlkfj slkd fjlks verbatim 
+\end{verbatim}
+
+\begin{enumerate}
+  \item Big Data
+  \item Data Science  
+\end{enumerate}
+
+
+\begin{description}
+  \item[Big Data]
+  \item[Data Science]
+  \item[Machine Learning]
+\end{description}
+
+
+
+
+\chapter{Conclusions}
+
+Write my conclusions.
+
+
+
+\appendix
+\chapter{A Long Proof}
+
+Write the appendix.
+
+\bibliographystyle{plain}
+\bibliography{mybib}
+
+
+
+\chapter{Reference}
+
+[1] Jeffreys, Harold (1973). Scientific Inference (3rd.), Cambridge University Press. p. 31. ISBN 978-0-521-18078-8.
+
+APA : Jeffreys, H. (1973). Scientific inference. Cambridge University Press.
+
+MLA : Jeffreys, Harold. Scientific inference. Cambridge University Press, 1973.
+
+Chicago: Jeffreys, Harold. Scientific inference. Cambridge University Press, 1973.
+
+Harvard: Jeffreys, H., 1973. Scientific inference. Cambridge University Press.
+
+[2] MLA: McGrayne, Sharon Bertsch. The theory that would not die: how Bayes' rule cracked the enigma code, hunted down Russian submarines, XXXX emerged triumphant from two centuries of controversy. Yale University Press, 2011.
+
+APA: McGrayne, S. B. (2011). The theory that would not die: how Bayes' rule cracked the enigma code, hunted down Russian submarines, XXXX emerged triumphant from two centuries of controversy. Yale University Press.
+
+
+Fuzzy Logic (wikipedia)
+
+[1] Arabacioglu, B. C. (2010). "Using fuzzy inference system for architectural space analysis". Applied Soft Computing. 10 (3): 926–937. doi:10.1016/j.asoc.2009.10.011.
+
+[2] Biacino, L.; Gerla, G. (2002). "Fuzzy logic, continuity and effectiveness". Archive for Mathematical Logic. 41 (7): 643–667. doi:10.1007/s001530100128. ISSN 0933-5846.
+
+[3] Cox, Earl (1994). The fuzzy systems handbook: a practitioner's guide to building, using, maintaining fuzzy systems. Boston: AP Professional. ISBN 0-12-194270-8.
+
+[4] Gerla, Giangiacomo (2006). "Effectiveness and Multivalued Logics". Journal of Symbolic Logic. 71 (1): 137–162. doi:10.2178/jsl/1140641166. ISSN 0022-4812.
+
+[5] Hájek, Petr (1998). Metamathematics of fuzzy logic. Dordrecht: Kluwer. ISBN 0-7923-5238-6.
+
+[6] Hájek, Petr (1995). "Fuzzy logic and arithmetical hierarchy". Fuzzy Sets and Systems. 3 (8): 359–363. doi:10.1016/0165-0114(94)00299-M. ISSN 0165-0114.
+
+
+
+
+\end{document}

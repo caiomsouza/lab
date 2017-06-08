@@ -1,0 +1,27 @@
+% Encoding: UTF-8
+
+@Article{Arabacioglu2010,
+  author        = {Arabacioglu, Burcin Cem},
+  title         = {Using fuzzy inference system for architectural space analysis},
+  journal       = {Applied Soft Computing},
+  year          = {2010},
+  volume        = {10},
+  number        = {3},
+  pages         = {926--937},
+  __markedentry = {[caiomsouza:]},
+  publisher     = {Elsevier},
+}
+
+@Article{Arabacioglu2010a,
+  author        = {Arabacioglu, Burcin Cem},
+  title         = {Using fuzzy inference system for architectural space analysis},
+  journal       = {Applied Soft Computing},
+  year          = {2010},
+  volume        = {10},
+  number        = {3},
+  pages         = {926--937},
+  __markedentry = {[caiomsouza:6]},
+  publisher     = {Elsevier},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
