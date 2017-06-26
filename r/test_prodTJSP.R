@@ -14,6 +14,8 @@ d_list <- prod_download_courts()
 
 d_list <- prod_list()
 
+head(d_list)
+
 prod_download(d_list, path = 'data-raw/pdf')
 
 # suppose your pdf files are in data-raw/pdf folder
